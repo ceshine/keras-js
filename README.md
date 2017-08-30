@@ -10,6 +10,26 @@ Library version compatibility:
 - Keras 2.0.4
 - TensorFlow 1.1.0
 
+### Instructions on Using the Dockerfile/Docker Image
+
+#### [Optional] Build docker locally
+
+First you need to clone the [keras-js-demos-data repo](https://github.com/transcranial/keras-js-demos-data) and copy the contents to demos/data/.
+
+Then use the following command to build the image:
+
+```
+docker build -t keras-js .
+```
+
+#### Create and run a docker container:
+
+```
+docker run --name keras-js-demo -d -p 3000:3000 keras-js
+```
+
+Open https://localhost:3000 to access the demo website.
+
 ### [Interactive Demos](https://transcranial.github.io/keras-js)
 
 <p align="center">
